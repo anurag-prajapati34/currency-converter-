@@ -141,7 +141,7 @@ const   getFromCurr =async ()=>{
 
    convertedValue=ConversionRate[toCurrCode]*amtValue;
   
-result.textContent=`${amtValue}${fromCurrCode} = ${convertedValue} ${toCurrCode}`
+result.textContent=`${amtValue} ${fromCurrCode} = ${convertedValue} ${toCurrCode}`
 
 
 
