@@ -28,8 +28,9 @@
         <li><code class="code">index.html</code>: Contains the HTML structure of the application.</li>
         <li><code class="code">style.css</code>: Contains the CSS styles for the application.</li>
         <li><code class="code">script.js</code>: Contains the JavaScript code that drives the application logic.</li>
+         </ul>
        
-    </ul>
+   
 
 
 
