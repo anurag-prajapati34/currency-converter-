@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(76, 127, 147);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#input input{
+    height: 5vmin;
+    width: 50vmin;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(162, 132, 77);
+    justify-content: space-evenly;
+}
+.container form{
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3vmin;
+    
+}
+#selectContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+select{
+    height: 5vmin;
+}
+.select{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.select img{
+    height: 5vmin;
+    width: 5vmin;
+}
+
+
+button{
+    width: 100%;
+    height: 5vmin;
+}
