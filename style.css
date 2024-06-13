@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600; */
+  font-family: 'PT Sans';
+  font-weight: 500;
     
 }
 body{
-    background-color: rgb(76, 127, 147);
+    background-color: #2F2D2E;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,8 +32,10 @@ body{
     align-items: center;
     flex-direction: column;
     height: 50vh;
-    background-color: rgb(162, 132, 77);
+    background-color:white;
     justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .container form{
     height: 100%;
@@ -39,10 +49,13 @@ body{
 #selectContainer{
     display: flex;
     justify-content: space-between;
+    border: none;
     
 }
 select{
     height: 5vmin;
+    border: none;
+    font-size: 3vmin;
 }
 .select{
    display: flex;
@@ -55,7 +68,17 @@ select{
 }
 
 
-button{
+
+#excBtn{
     width: 100%;
-    height: 5vmin;
+    height: 6vmin;
+    border-radius: 20px;
+    background-color: #2F2D2E;
+    color: white;
+    font-size: 3vmin;
+
+}
+#excBtn:hover{
+    cursor: pointer;
+
 }
