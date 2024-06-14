@@ -26,6 +26,7 @@ let result=document.querySelector("#result");
 ///adding country name to select dropdown options//
 let data;
 let convertedValue;
+let img
 
 
 const setOptions=(data)=>{
@@ -37,9 +38,23 @@ const setOptions=(data)=>{
           
             newOption.value=currencyCode;
             newOption.textContent=`${countryList[currencyCode]}`;
+
+            if(select.name==="from" && currencyCode==="USD"){
+                newOption.selected="selected";
+                let usimg=document.querySelector("#from img");
+                usimg.src=`https://flagcdn.com/16x12/${countryList[currencyCode].toLowerCase()}.png`;
+                
+            }
+            else if(select.name==="to" && currencyCode==="INR"){
+                newOption.selected="selected";
+
+                let inimg=document.querySelector("#to img");
+                inimg.src=`https://flagcdn.com/16x12/${countryList[currencyCode].toLowerCase()}.png`;
+              
+            }
             select.append(newOption);
             
-    
+            
         }
         select.addEventListener("change",(evt)=>{
             setFlag(evt.target);
@@ -89,7 +104,7 @@ const setFlag=(element)=>{
 
     
    
-   let img= element.parentElement.querySelector("img");
+  img= element.parentElement.querySelector("img");
    let newSrc=`https://flagcdn.com/16x12/${countryCode.toLowerCase()}.png`;
 img.src=newSrc;
 
